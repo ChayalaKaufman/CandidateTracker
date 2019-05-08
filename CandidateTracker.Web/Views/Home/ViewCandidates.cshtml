@@ -1,0 +1,26 @@
+﻿@using CandidateTracker.Data
+@model IEnumerable<Candidate>
+
+<button id="toggle" class="btn btn-primary">Toggle Notes</button>
+<br/>
+<table style="margin-top:20px;" class="table table-hover table-striped table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th id="notesHeader">Notes</th>
+    </tr>
+    @foreach (Candidate c in Model)
+    {
+        <tr>
+            <td><a href="/home/viewCandidate?id=@c.Id">@c.FirstName @c.LastName</a></td>
+            <td>@c.Phone</td>
+            <td>@c.Email</td>
+            <td class="notes">@(c.Notes.Length < 100 ? c.Notes : c.Notes.Substring(0, 100) + "....." )</td>
+        </tr>
+    }
+</table>
+
+@section scripts{ 
+<script src="/js/viewCandidates.js"></script>
+}

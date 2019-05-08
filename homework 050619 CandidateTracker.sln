@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateTracker.Web", "CandidateTracker.Web\CandidateTracker.Web.csproj", "{EF40EBA6-364D-446C-BAE2-2A1C86FC01EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateTracker.Data", "CandidateTracker.Data\CandidateTracker.Data.csproj", "{FB8794ED-6503-4A85-8C01-63CBFB3ACBE1}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF40EBA6-364D-446C-BAE2-2A1C86FC01EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF40EBA6-364D-446C-BAE2-2A1C86FC01EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF40EBA6-364D-446C-BAE2-2A1C86FC01EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF40EBA6-364D-446C-BAE2-2A1C86FC01EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB8794ED-6503-4A85-8C01-63CBFB3ACBE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB8794ED-6503-4A85-8C01-63CBFB3ACBE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB8794ED-6503-4A85-8C01-63CBFB3ACBE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB8794ED-6503-4A85-8C01-63CBFB3ACBE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

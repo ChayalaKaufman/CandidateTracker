@@ -1,0 +1,22 @@
+﻿@using CandidateTracker.Data
+@model Candidate
+
+<div class="row">
+    <div class="col-md-10 col-md-offset-1 well">
+        <h1>@Model.FirstName @Model.LastName</h1>
+        <h4>Email: @Model.Email</h4>
+        <h4>Phone: @Model.Phone</h4>
+        <p>@Model.Notes</p>
+        <br />
+        @if (Model.Confirmed == null)
+        {
+            <button id="confirm" data-id="@Model.Id" class="btn btn-success btn-lg">Confirm</button>
+            <button id="decline" data-id="@Model.Id" class="btn btn-danger btn-lg">Decline</button>
+        }
+    </div>
+</div>
+
+@section scripts{ 
+<script src="/js/candidate.js"></script>
+}
+
